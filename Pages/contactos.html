@@ -9,93 +9,94 @@
     <title>Contactos</title>
 </head>
 <body>
-    <nav>
-        <a href="/bigminers.html">Inicio</a></li>  
-        <a href=""> Rigs </a></li> 
-        <a href=""> GPUs </a></li>
-        <a href="">Housing</a> </li>
-        <a href="/contactos.html">Contactos</a> </li>
-        <a href="">Envios</a> </li>  
-       <li style="float: right">  <a href="/login.html">Iniciar Sesion </a> </li>
-   </nav>
-<br><br><br><br>
-    
+    <div class="contenedorGrid">
+        <header>
+            <nav>
+                <a href="/bigminers.html">Inicio</a></li>  
+                <a href=""> Rigs </a></li> 
+                <a href=""> GPUs </a></li>
+                <a href="">Housing</a> </li>
+                <a href="contactos.html">Contactos</a> </li>
+                <a href="">Envios</a> </li> 
+                <li style="float: right">  <a href="/login.html">Iniciar Sesion </a> </li>
+            </nav>
+        </header>
+        
+        <main>
+
+        
  
-    <section>
-        <aside>
-            <img class="imagencont" src="imagenes/logo diseñado 2.png" alt="">
-        </aside><h1 class="clasecontacto">Contacto</h1>
-        <aside>
+        <section>
+            <aside>
+                <img class="imagencont" src="imagenes/logo diseñado 2.png" alt="">
+            </aside><h1 class="clasecontacto">Contacto</h1>
+            <aside>
 
-        </aside>
-    </section>
+            </aside>
+        </section>
 
-    <section class="formulario">
-        <form  autocomplete="off">
-            <fieldset>
+        <section class="formulario">
+            <form  autocomplete="off">
+                <fieldset>
 
-            <label  for="nombre">Nombre: </label>
-            <input type="text" id="nombre" placeholder="Escribe tu nombre " 
-            name="nombre" required >
-            <br><br>
+                <label  for="nombre">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre " 
+                name="nombre" required >
+                
+                
+                <label  for="nombre">Apellido: </label>
+                <input type="text" id="apellido" placeholder="Escribe tu apellido"
+                name="apellido" required>
+                
+                
+                <label for="E-mail">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+                
+
+                <label for="telefono">Telefono: </label>
+                <input type="text" id="telefono" name="telefono" placeholder="Numero de telefono" required>
+                
+
+
+                <label for="porque">¿Por qué nos contactás? </label>
+                <select name="contacto" id="contacto" style="font-size: 17px;">
+                    <option value="asesoramiento">Asesoramiento</option>
+                    <option value="presupuesto">Presupuesto</option>
+                    <option value="housing">Servicio de Housing</option>
+                    <option value="problema">Problemas con algun producto</option>
+                    <option value="otros">Otro</option>
+                </select>
+                
+                
+               
+
             
-            <label  for="nombre">Apellido: </label>
-            <input type="text" id="apellido" placeholder="Escribe tu apellido"
-             name="apellido" required>
-            <br><br>
-            
-            <label for="E-mail">Email: </label>
-            <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
-            <br><br>
 
-            <label for="telefono">Telefono: </label>
-            <input type="text" id="telefono" name="telefono" placeholder="Numero de telefono" required>
-            <br><br>
+                <label for="comentario"> Comentario: </label>
+                <textarea name="comentario" id="comentario" cols="50" rows="6"></textarea>
+
+             
+                <input type="submit" value="Enviar">  <input type="reset" value="Restablecer">
+              
 
 
-            <label for="porque">¿Por qué nos contactás? </label><br>
-            <select name="contacto" id="contacto" style="font-size: 17px;">
-                <option value="asesoramiento">Asesoramiento</option>
-                <option value="presupuesto">Presupuesto</option>
-                <option value="housing">Servicio de Housing</option>
-                <option value="problema">Problemas con algun producto</option>
-                <option value="otros">Otro</option>
-            </select>
+            </fieldset>
+        
+        </section>
+
+        </main>
+        <footer>
+
             
-            
-            <br><br>
+        </footer>
+        <article class="contactoss">
+            <a href="contactos.html"> Contacto <span class="material-symbols-outlined">
+            comment
+            </span></a>   
+        </article>   
 
         
-
-            <label for="comentario"> Comentario: </label><br>
-            <textarea name="comentario" id="comentario" cols="50" rows="6"></textarea>
-
-            <br><br>
-            <input type="submit" value="Enviar">  <input type="reset" value="Restablecer">
-            <br>
-
-
-        </fieldset>
-     
-    </section>
-
-
-    <article class="contactoss">
-        <a href="contactos.html"> Contacto <span class="material-symbols-outlined">
-          comment
-          </span></a>   
-  </article>   
-
-    <br/><br/><br/><br/>
-    <section class="contactos">
-        <article>
-         <h3> Contactos</h3>   
-            <h5>Tel: (2345)-415488</h5>
-            <h5>Instagram: @big.miners</h5> 
-            <h5>E-mail: bigminers01@gmail.com</h5> 
-            
-        </article>
         
-    </section>
+    </div>
 </body>
 </html>
