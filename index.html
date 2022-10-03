@@ -4,24 +4,36 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="css/estilos.css" rel="stylesheet"/>
         <title> Big Miners</title>
     </head>
     <body>
         <div class="contenedorGrid">
-            <header>
+            <header >
                 <nav>
-                    <a href="/bigminers.html">Inicio</a></li>  
-                    <a href=""> Rigs </a></li> 
-                    <a href=""> GPUs </a></li>
-                    <a href="">Housing</a> </li>
-                    <a href="contactos.html">Contactos</a> </li>
-                    <a href="">Envios</a> </li> 
-                    <li style="float: right">  <a href="/login.html">Iniciar Sesion </a> </li>
+                    <ul class="nav container" id="menu">
+                        <li>
+                            <a href="/bigminers.html">Inicio</a></li>  
+                        </li>
+                        <li><a href=""> Rigs </a></li>
+                        <li><a href=""> GPUs </a></li>
+                        <li><a href="">Housing</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="">Envios</a></li>
+                    </ul>
+                    
+                   <a href="#menu" class="navHamburguesa"><span class="material-symbols-outlined">
+                    menu
+                    </span></a>
+                    <a href="#" class="navClose"><span class="material-symbols-outlined">
+                        close
+                        </span></a>
                 </nav>
             </header>
             
+
             <main>       
                 <div class="logoprincipal">
                     <img  class="logoimg" src="imagenes/logo diseñado 1.png" alt="Big Miners" />
@@ -41,112 +53,16 @@
                         <img src="imagenes/10.png" alt="Big Miners"class="cadaimg"> 
                     </div>  
                 </div>
-
-                <div class="rigscartel house"> 
-                    <p > Servicio de Housing </p>
-                </div>
-                
-
-                <div class="parrafohousing">
-                    <p> El Housing es un servicio donde nos hacemos cargo de tus Rigs de Mineria. 
-                        Hacemos que funcionen en las optimas condiciones, con todos los cuidados y seguridad que un Rig requiere.
-                        Todos los meses recibiras el pago por lo minado.
-                    
-                        
-
-                    </p>
-                </div>
-
-
-
-                <div class="contenedorhousing">
-                    <div class="imghouse">
-                        <img src="imagenes/housing.png" alt="Housing">
-                    </div>
-                    <div>
-                        <div class="contenedorhousing  hacemostb">
-                            <a href="">HACEMOS EL TRABAJO POR VOS </a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="contenedorhousing palabras">
-                            <a href=""> <span class="material-symbols-outlined" 
-                                style="vertical-align: bottom;">videocam
-                            </span> MONITOREO LAS 24HS. </a>
-                        </div> <br/>
-                    </div>
-                    <div>
-                        <div class="contenedorhousing palabras">
-                            <a href=""> <span class="material-symbols-outlined"
-                                style="vertical-align: bottom;">
-                                build_circle
-                                </span> MANTENIMIENTO </a>
-                        </div>   
-                    </div>
-                    <div>
-                        <div class="contenedorhousing palabras">
-                            <a href=""><span class="material-symbols-outlined"
-                                style="vertical-align: bottom;"> security
-                                </span> SEGURIDAD</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="contenedorhousing palabras sabermas">
-                            <a href="serviciodehousing.html">PARA MAS INFORMACION</a>
-                        <div>
-                    </div>           
-                </div>
-
-                <div class="rigscartel envios"> 
-                    <p > Envios </p>
-                </div>
-
-                <div class="contenedorenvios">
-                    <div class="imgenvios">
-                        <img src="imagenes/envios.jpg" alt="Envios">
-                    </div> 
-                    <div class="textoenvios">
-                        <p>REALIZAMOS ENVIOS A TODO EL PAIS</p>
-                    </div>
-                    <div class="textoenvios masinfo">
-                        <a href="">MAS INFORMACION</a>
-                    </div>
-                </div>
+    
                 
         </main> 
 
         <footer>
         <div class="container_footer">
-            <div class="columna_footer">
-                <div class="logo">
-                    <img src="imagenes/logo diseñado 3.png" alt="Big_Miners">
-                </div>
-            </div>
-            <div class="columna_footer">
-                <div>
-                    <h2>Contactos</h2>
-                    <p>Instagram: @big.miners </p>
-                    <p>E-mail: bigminers01@gmail.com</p>
-                    <p>Tel: (2345)-415488</p>
-                </div>
-            </div> 
-            <div class="columna_footer">
-                <div class=" acercacontenido">
-                    <h2>Acerca de</h2>
-                    <a href="#"> Rigs</a>
-                    <a href="#"> GPUs</a>
-                    <a href="#"> Housing</a>
-                    <a href="#"> Contactos</a>
-                    <a href="#"> Envios</a>
-                </div>
-            </div>
+           
         </div>  
         </footer>
-    <article class="contactoss">
-        <a href="contactos.html"> Contacto <span class="material-symbols-outlined">
-            comment
-            </span></a>   
-    </article>      
+    
     </div>
     </body>
 </html>
