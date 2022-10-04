@@ -1,18 +1,99 @@
 * {
   margin: 0;
-  box-sizing: border-box; }
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
-header {
-  min-height: 500px;
-  height: 100vh;
-  color: #fff;
-  width: 100%;
-  background-color: #33e6e6; }
-  header nav {
-    padding: 40px 0;
-    display: grid; }
-    header nav ul.container {
-      margin: 0 auto;
+div.contenedorGrid header {
+  overflow: hidden; }
+  div.contenedorGrid header.header {
+    width: 100%;
+    height: 4.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0c0f50; }
+    div.contenedorGrid header.header .container {
       width: 90%;
       max-width: 1200px;
-      overflow: hidden; }
+      margin: auto; }
+      div.contenedorGrid header.header .container .btn-menu {
+        float: left;
+        line-height: 100px; }
+        div.contenedorGrid header.header .container .btn-menu label {
+          color: #fff;
+          font-size: 40px;
+          cursor: pointer; }
+      div.contenedorGrid header.header .container .logo h1 {
+        color: #fff;
+        font-weight: 400px;
+        font-size: 10px; }
+      div.contenedorGrid header.header .container .menu {
+        float: right;
+        line-height: 100px; }
+        div.contenedorGrid header.header .container .menu a {
+          display: inline-block;
+          padding: 15px;
+          line-height: normal;
+          text-decoration: none;
+          color: #fff;
+          transition: all 0.3s ease;
+          border-bottom: 2px solid;
+          font-size: 15px;
+          margin-right: 5px; }
+
+div.contenedorGrid .capa {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #5c5551;
+  z-index: -1;
+  top: 0;
+  left: 0; }
+
+div.contenedorGrid #btn-menu {
+  display: none; }
+
+div.contenedorGrid #btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+  position: fixed; }
+
+div.contenedorGrid #btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%); }
+
+div.contenedorGrid .container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden; }
+  div.contenedorGrid .container-menu .cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease; }
+    div.contenedorGrid .container-menu .cont-menu nav {
+      transform: translateY(15%); }
+      div.contenedorGrid .container-menu .cont-menu nav a {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #c7c7c7;
+        border-left: 5px solid transparent; }
+        div.contenedorGrid .container-menu .cont-menu nav a:hover {
+          border-left: 5px solid #c7c7c7;
+          background: #1f1f1f; }
+    div.contenedorGrid .container-menu .cont-menu label {
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px; }

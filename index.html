@@ -6,53 +6,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link href="css/estilos.css" rel="stylesheet"/>
+        <link href="./css/estilo.css" rel="stylesheet"/>
         <title> Big Miners</title>
     </head>
     <body>
         <div class="contenedorGrid">
-            <header >
-                <nav>
-                    <ul class="nav container" id="menu">
-                        <li>
-                            <a href="/bigminers.html">Inicio</a></li>  
-                        </li>
-                        <li><a href=""> Rigs </a></li>
-                        <li><a href=""> GPUs </a></li>
-                        <li><a href="">Housing</a></li>
-                        <li><a href="contactos.html">Contactos</a></li>
-                        <li><a href="">Envios</a></li>
-                    </ul>
+            <header class="header">
+                <div class="container">
+                    <div class="btn-menu">
+                        <label for="btn-menu">☰</label>
+                    </div>
+                    <div class="logo">
+                        <h1>Big Miners</h1>
+                    </div>
                     
-                   <a href="#menu" class="navHamburguesa"><span class="material-symbols-outlined">
-                    menu
-                    </span></a>
-                    <a href="#" class="navClose"><span class="material-symbols-outlined">
-                        close
-                        </span></a>
-                </nav>
+             </div>
             </header>
-            
+            <div class="capa"></div>
+
+            <input type="checkbox" id="btn-menu">
+
+            <div class="container-menu">
+                <div class="cont-menu">
+                    <nav>
+                        <a href="/bigminers.html">Inicio</a>  
+                        <a href=""> Rigs </a>
+                        <a href=""> GPUs </a>
+                        <a href="">Housing</a>
+                        <a href="contactos.html">Contactos</a>
+                        <a href="">Envios</a>
+                        
+                    </nav>
+                    <label for="btn-menu">✖️</label>
+                </div> 
+            </div>
 
             <main>       
-                <div class="logoprincipal">
+                <div class="logoprincipal" style="margin:20rem ;">
                     <img  class="logoimg" src="imagenes/logo diseñado 1.png" alt="Big Miners" />
                 </div>  
                     <article class="somosuna"> 
                         <h3 > Somos una empresa dedicada a todo lo relacionado con la criptomineria</p>
                     </article>
                 
-                <div class="imagenesinicio">
-                    <div class="contenedorimg">
-                        <img src="imagenes/1.jpeg" alt="Big Miners" class="cadaimg" >
-                    </div>
-                    <div class="contenedorimg">
-                        <img src="imagenes/9.jpeg" alt="Big Miners" class="cadaimg"> 
-                    </div>
-                    <div class="contenedorimg">
-                        <img src="imagenes/10.png" alt="Big Miners"class="cadaimg"> 
-                    </div>  
-                </div>
+                
     
                 
         </main> 
