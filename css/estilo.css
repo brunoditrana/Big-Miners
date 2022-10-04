@@ -14,20 +14,23 @@ div.contenedorGrid header {
     left: 0;
     background-color: #0c0f50; }
     div.contenedorGrid header.header .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto; }
+      width: 100%;
+      max-width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between; }
       div.contenedorGrid header.header .container .btn-menu {
-        float: left;
-        line-height: 100px; }
+        align-items: center;
+        align-self: center;
+        margin-left: 4rem;
+        margin-bottom: .5rem; }
         div.contenedorGrid header.header .container .btn-menu label {
           color: #fff;
           font-size: 40px;
           cursor: pointer; }
-      div.contenedorGrid header.header .container .logo h1 {
-        color: #fff;
-        font-weight: 400px;
-        font-size: 10px; }
+      div.contenedorGrid header.header .container .logo img {
+        width: 20rem;
+        margin-right: 4rem; }
       div.contenedorGrid header.header .container .menu {
         float: right;
         line-height: 100px; }
@@ -46,7 +49,6 @@ div.contenedorGrid .capa {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: #5c5551;
   z-index: -1;
   top: 0;
   left: 0; }
@@ -75,7 +77,7 @@ div.contenedorGrid .container-menu {
   div.contenedorGrid .container-menu .cont-menu {
     width: 100%;
     max-width: 250px;
-    background: #1c1c1c;
+    background: #0c0f50;
     height: 100vh;
     position: relative;
     transition: all 500ms ease; }
@@ -85,11 +87,11 @@ div.contenedorGrid .container-menu {
         display: block;
         text-decoration: none;
         padding: 20px;
-        color: #c7c7c7;
+        color: #f2ecec;
         border-left: 5px solid transparent; }
         div.contenedorGrid .container-menu .cont-menu nav a:hover {
-          border-left: 5px solid #c7c7c7;
-          background: #1f1f1f; }
+          border-left: 5px solid #240b6f;
+          background: #75a9d3; }
     div.contenedorGrid .container-menu .cont-menu label {
       position: absolute;
       right: 5px;
@@ -97,3 +99,27 @@ div.contenedorGrid .container-menu {
       color: #fff;
       cursor: pointer;
       font-size: 18px; }
+
+.contenedorIndex {
+  margin-top: 10rem;
+  margin-bottom: 4rem; }
+  .contenedorIndex .logoprincipal {
+    width: 100%;
+    text-align: center; }
+    .contenedorIndex .logoprincipal img.logoimg {
+      margin: 0 auto;
+      width: 55%; }
+  .contenedorIndex .fraseIndex {
+    margin-top: 5rem;
+    width: 100%; }
+    .contenedorIndex .fraseIndex h3 {
+      margin: 0 auto;
+      width: 65%;
+      text-align: center;
+      padding: 1rem;
+      font-size: 2rem;
+      background-color: rgba(227, 227, 227, 0.784);
+      border: 2px solid black;
+      border-radius: 5px 5px;
+      box-shadow: 2px 6px 2px 2px grey;
+      font-family: 'IM Fell English', serif; }
