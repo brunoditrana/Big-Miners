@@ -11,7 +11,7 @@ div.contenedorGrid{
             background-color: #0c0f50;
 
             .container{
-                width: 100%;
+                width: 95%;
                 max-width: 100%;
                 margin: auto;
                 display: flex;
@@ -32,6 +32,14 @@ div.contenedorGrid{
                     img{
                         width: 20rem;
                         margin-right: 4rem;
+                    }
+                }
+                .iconoCompra{  
+                    a{
+                        img{
+                            margin-top: .5rem;
+                            width: 3rem;
+                        }
                     }
                 }
                 .menu{

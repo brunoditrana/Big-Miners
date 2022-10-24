@@ -4,13 +4,10 @@
     grid-template-rows: repeat(7, auto);
     margin-bottom: 3rem;
     grid-template-areas: 
-    "tituloPlatos tituloPlatos tituloPlatos tituloPlatos"
-    "tituloAltaCocina tituloAltaCocina tituloAltaCocina tituloAltaCocina"
-    "tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno"
-    "tituloTradicional tituloTradicional tituloTradicional tituloTradicional"
+    "tituloGpus tituloGpus tituloGpus tituloGpus"
+    "tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno" 
     "tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos"
-    "tituloPostres tituloPostres tituloPostres tituloPostres"
-    "tarjetasFilaTres  tarjetasFilaTres tarjetasFilaTres tarjetasFilaTres"
+
 }
 .claseFlex{                               //Clase usada como Extend
     display: flex;
@@ -20,7 +17,7 @@
 }
 
 
-.tituloGpus{ grid-area: tituloAltaCocina;
+.tituloGpus{ grid-area: tituloGpus;
     text-align: center;
     font-size: 2rem;
     margin-top: 2rem;
@@ -30,7 +27,9 @@
 .tarjetasFilaUno{ grid-area: tarjetasFilaUno;
     @extend .claseFlex;                            // Extend          
 } 
-
+.tarjetasFilaDos{grid-area: tarjetasFilaDos;
+    @extend .claseFlex; 
+}
 .tarjetaGpus{
     display: grid;
     grid-template-columns: auto;
@@ -63,4 +62,13 @@
         padding: .1rem;
         margin: .1rem;
     }
+}
+.bigMinersGpus{
+    
+    width: 55%;
+    margin: 3rem auto;
+    .bigMinersimg{
+        width: 100%;
+    }
+
 }

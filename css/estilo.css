@@ -14,7 +14,7 @@ div.contenedorGrid header {
     left: 0;
     background-color: #0c0f50; }
     div.contenedorGrid header.header .container {
-      width: 100%;
+      width: 95%;
       max-width: 100%;
       margin: auto;
       display: flex;
@@ -31,6 +31,9 @@ div.contenedorGrid header {
       div.contenedorGrid header.header .container .logo img {
         width: 20rem;
         margin-right: 4rem; }
+      div.contenedorGrid header.header .container .iconoCompra a img {
+        margin-top: .5rem;
+        width: 3rem; }
       div.contenedorGrid header.header .container .menu {
         float: right;
         line-height: 100px; }
@@ -129,16 +132,16 @@ div.contenedorGrid .container-menu {
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(7, auto);
   margin-bottom: 3rem;
-  grid-template-areas: "tituloPlatos tituloPlatos tituloPlatos tituloPlatos" "tituloAltaCocina tituloAltaCocina tituloAltaCocina tituloAltaCocina" "tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno" "tituloTradicional tituloTradicional tituloTradicional tituloTradicional" "tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos" "tituloPostres tituloPostres tituloPostres tituloPostres" "tarjetasFilaTres  tarjetasFilaTres tarjetasFilaTres tarjetasFilaTres"; }
+  grid-template-areas: "tituloGpus tituloGpus tituloGpus tituloGpus" "tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno"  "tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos"; }
 
-.claseFlex, .tarjetasFilaUno {
+.claseFlex, .tarjetasFilaUno, .tarjetasFilaDos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap; }
 
 .tituloGpus {
-  grid-area: tituloAltaCocina;
+  grid-area: tituloGpus;
   text-align: center;
   font-size: 2rem;
   margin-top: 2rem;
@@ -146,6 +149,9 @@ div.contenedorGrid .container-menu {
 
 .tarjetasFilaUno {
   grid-area: tarjetasFilaUno; }
+
+.tarjetasFilaDos {
+  grid-area: tarjetasFilaDos; }
 
 .tarjetaGpus {
   display: grid;
@@ -169,3 +175,22 @@ div.contenedorGrid .container-menu {
     grid-area: iconoPeso;
     padding: .1rem;
     margin: .1rem; }
+
+.bigMinersGpus {
+  width: 55%;
+  margin: 3rem auto; }
+  .bigMinersGpus .bigMinersimg {
+    width: 100%; }
+
+.bigMinersRigs {
+  width: 55%;
+  margin: 6rem auto; }
+  .bigMinersRigs .bigMinersimg {
+    width: 100%; }
+
+.tituloRigs {
+  margin: auto;
+  text-align: center; }
+
+.tarjetasFilaDos {
+  margin-bottom: 4rem; }
