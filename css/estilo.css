@@ -182,6 +182,9 @@ div.contenedorGrid .container-menu {
   .bigMinersGpus .bigMinersimg {
     width: 100%; }
 
+.alertVentana {
+  background-color: #0ae34b; }
+
 .bigMinersRigs {
   width: 55%;
   margin: 6rem auto; }
