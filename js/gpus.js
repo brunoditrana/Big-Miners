@@ -1,3 +1,6 @@
+function inicio(){
+
+
 (async () => {
 
 const {value: gpus} = await Swal.fire({
@@ -24,40 +27,37 @@ const productoGpus = [
     {id: 6, nombre:"RTX 3070 PHOENIX GS" , precio: 220.000, stock: 10  },
 ];
 
+function returnAlert(resultado){
+   return alert(`EL resultado es : \n\n${resultado.map(el => el.nombre , ).join(', ')} \nPrecio: ${resultado.map(el => el.precio )}.000\nStock: ${resultado.map(el => el.stock )} `);
+}
 
 if(gpus == "1660 Super" ){
     const resultado = productoGpus.filter((el) => el.nombre.includes("1660 Super"));
-    alert(`EL resultado es : \n\n${resultado.map(el => el.nombre , ).join(', ')} \nPrecio: ${resultado.map(el => el.precio )}.000\nStock: ${resultado.map(el => el.stock )} `);
+    returnAlert(resultado);
     
 } else if(gpus == "2060 Super"){
     const resultado = productoGpus.filter((el) => el.nombre.includes("2060 Super"));
-    alert(`EL resultado es : \n\n${resultado.map(el => el.nombre , ).join(', ')} \nPrecio: ${resultado.map(el => el.precio )}.000\nStock: ${resultado.map(el => el.stock )} `);
+    returnAlert(resultado);
 
 }else if(gpus == "3070 TI"){
     const resultado = productoGpus.filter((el) => el.nombre.includes("3070 TI"));
-    alert(`EL resultado es : \n\n${resultado.map(el => el.nombre , ).join(', ')} \nPrecio: ${resultado.map(el => el.precio )}.000\nStock: ${resultado.map(el => el.stock )} `);
+    returnAlert(resultado);
 
 }else if(gpus == "3080 TI"){
     const resultado = productoGpus.filter((el) => el.nombre.includes("3080 TI"));
-    alert(`EL resultado es : \n\n${resultado.map(el => el.nombre , ).join(', ')} \nPrecio: ${resultado.map(el => el.precio )}.000\nStock: ${resultado.map(el => el.stock )} `);
+    returnAlert(resultado);
 
 }else if(gpus == "3060 TI"){
     const resultado = productoGpus.filter((el) => el.nombre.includes("3060 TI"));
-    alert(`EL resultado es : \n\n${resultado.map(el => el.nombre , ).join(', ')} \nPrecio: ${resultado.map(el => el.precio )}.000\nStock: ${resultado.map(el => el.stock )} `);
+    returnAlert(resultado);
 
 }else if(gpus == "3070 PHOENIX"){
     const resultado = productoGpus.filter((el) => el.nombre.includes("3070 PHOENIX"));
-    alert(`EL resultado es : \n\n${resultado.map(el => el.nombre , ).join(', ')} \nPrecio: ${resultado.map(el => el.precio )}.000\nStock: ${resultado.map(el => el.stock )} `);
+    returnAlert(resultado);
 }
 
 
 })();
+}
 
 
-
-
-
-
-
-// timer: 4000,
-//timerProgressBar: true,
