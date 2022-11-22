@@ -12,6 +12,7 @@ let mensajeNombre = prompt("Ingresa tu nombre para comenzar");
     }
      
  
+    
  
 
  let mensajeopciones = prompt("¿"+ mensajeNombre + 
