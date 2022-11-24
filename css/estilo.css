@@ -4,6 +4,87 @@
   box-sizing: border-box;
   overflow-x: hidden; }
 
+.dividirGpus {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, auto);
+  margin-bottom: 3rem;
+  grid-template-areas: "tituloGpus tituloGpus tituloGpus tituloGpus" "tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno"  "tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos"; }
+
+.claseFlex, .tarjetasFilaUno, .tarjetasFilaDos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden; }
+
+.tituloGpus {
+  grid-area: tituloGpus;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-family: 'Fredericka the Great', cursive; }
+
+.tarjetasFilaUno {
+  grid-area: tarjetasFilaUno; }
+
+.tarjetasFilaDos {
+  grid-area: tarjetasFilaDos; }
+
+.tarjetaGpus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 20%;
+  height: auto;
+  background-color: white;
+  border-radius: 0.2rem;
+  margin: 2rem 0;
+  box-shadow: 1px 2px 6px 2px grey; }
+  .tarjetaGpus .parrafoPlatos {
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif, cursive; }
+  .tarjetaGpus .imgGpus {
+    width: 100%; }
+  .tarjetaGpus .precio {
+    margin: 1rem auto;
+    font-size: 1.2rem; }
+
+.bigMinersGpus {
+  width: 55%;
+  margin: 3rem auto; }
+  .bigMinersGpus .bigMinersimg {
+    width: 100%; }
+
+.alertVentana {
+  background-color: #0ae34b; }
+
+.contenedorModal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-in-out; }
+  .contenedorModal .modal {
+    background-color: #eeeee8;
+    width: 22rem;
+    height: 16rem;
+    border-radius: 10px;
+    padding: 15px; }
+
+.contenedorModalActivo {
+  visibility: visible;
+  opacity: 1; }
+
 div.contenedorGrid header {
   overflow: hidden; }
   div.contenedorGrid header.header {
@@ -126,64 +207,6 @@ div.contenedorGrid .container-menu {
       border-radius: 5px 5px;
       box-shadow: 2px 6px 2px 2px grey;
       font-family: 'IM Fell English', serif; }
-
-.dividirGpus {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(7, auto);
-  margin-bottom: 3rem;
-  grid-template-areas: "tituloGpus tituloGpus tituloGpus tituloGpus" "tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno"  "tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos"; }
-
-.claseFlex, .tarjetasFilaUno, .tarjetasFilaDos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
-
-.tituloGpus {
-  grid-area: tituloGpus;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 2rem;
-  font-family: 'Fredericka the Great', cursive; }
-
-.tarjetasFilaUno {
-  grid-area: tarjetasFilaUno; }
-
-.tarjetasFilaDos {
-  grid-area: tarjetasFilaDos; }
-
-.tarjetaGpus {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 70% 20% 10%;
-  grid-template-areas: "imgPlatos" "parrafoPlatos" "iconoPeso";
-  width: 20%;
-  height: 25rem;
-  background-color: white;
-  border-radius: 0.2rem;
-  margin: 2rem 0;
-  box-shadow: 1px 2px 6px 2px grey; }
-  .tarjetaGpus .parrafoPlatos {
-    grid-area: parrafoPlatos;
-    margin: 1rem;
-    text-align: center;
-    font-family: 'Bad Script', cursive; }
-  .tarjetaGpus .imgGpus {
-    width: 100%; }
-  .tarjetaGpus .iconoPeso {
-    grid-area: iconoPeso;
-    padding: .1rem;
-    margin: .1rem; }
-
-.bigMinersGpus {
-  width: 55%;
-  margin: 3rem auto; }
-  .bigMinersGpus .bigMinersimg {
-    width: 100%; }
-
-.alertVentana {
-  background-color: #0ae34b; }
 
 .bigMinersRigs {
   width: 55%;

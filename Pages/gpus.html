@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="../js/modal.js"></script>
+    <script defer src="../js/gpus.js"></script>
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Venta de GPUs</title>
 </head>
@@ -20,7 +21,7 @@
                         <img src="../imagenes/logo diseñado 1.png" alt="">
                     </div>
                     <div class="iconoCompra">
-                       <a href=""><img src="../imagenes/carrito-de-compras.png" alt=""></a>
+                       <button id="botonAbrir"><img src="../imagenes/carrito-de-compras.png" alt=""></button>
                     </div>
                     
              </div>
@@ -50,6 +51,8 @@
                 <img class="bigMinersimg" src="../imagenes/logo diseñado 1.png" alt="ddd">
             </div>
             
+            
+
                 
 
                 <div class="dividirGpus">
@@ -61,55 +64,49 @@
                     <div class="tarjetasFilaUno">
                         
                         <div class="tarjetaGpus tarjetaUno" data-aos="zoom-in-right">
-                            <p class="parrafoPlatos">Placa de Video 1660 Super</p>
                             <img  class="imgGpus" src="../imagenes/placa 1660S.png" alt="placa-1660S">
-                            <span class="iconoPeso material-symbols-outlined" >
-                                attach_money
-                                </span>
+                            <p class="parrafoPlatos">Placa de Video 1660 Super</p>
+                            <h4 class="precio">Precio: $ </h4>
+                            <button id="AgrgarCarrito">Agregar al carrito</button>
                         </div>
     
                         <div class="tarjetaGpus tarjetaDos" data-aos="zoom-in-right">
-                            <p class="parrafoPlatos">Placa de Video 2060 Super</p>
                             <img class="imgGpus" src="../imagenes/placa 2060 super.png" alt="placa-2060-super">
-                            <span class="iconoPeso material-symbols-outlined" >
-                                attach_money
-                                </span>
-                                
+                            <p class="parrafoPlatos">Placa de Video 2060 Super</p>
+                            <h4 class="precio">Precio: $ </h4>
+                            <button id="AgrgarCarrito">Agregar al carrito</button>
+                           
                         </div >
                         
     
                         <div class="tarjetaGpus tarjetaTres" data-aos="zoom-in-left">
-                            <p class="parrafoPlatos">Placa de Video RTX 3070 TI </p>
                             <img class="imgGpus" src="../imagenes/placa 3070 ti evga.png" alt="placa-3070-ti ">
-                            <span class="iconoPeso material-symbols-outlined" >
-                                attach_money
-                                </span>
+                            <p class="parrafoPlatos">Placa de Video RTX 3070 TI </p>
+                            <h4 class="precio">Precio: $ </h4>
+                            <button id="AgrgarCarrito">Agregar al carrito</button>
                         </div>
                         
                         <div class="tarjetasFilaDos">
                         
                             <div class="tarjetaGpus tarjetaUno" data-aos="zoom-in-right">
-                                <p class="parrafoPlatos">RTX 3080tI ZOTAC LHR</p>
                                 <img  class="imgGpus" src="../imagenes/RTX 3080ti  ZOTAC LHR.png" alt="RTX-3080ti-ZOTAC">
-                                <span class="iconoPeso material-symbols-outlined" >
-                                    attach_money
-                                    </span>
+                                <p class="parrafoPlatos">RTX 3080tI ZOTAC LHR</p>
+                                <h4 class="precio">Precio: $ </h4>
+                                <button id="AgrgarCarrito">Agregar al carrito</button>
                             </div>
         
                             <div class="tarjetaGpus tarjetaDos" data-aos="zoom-in-right">
-                                <p class="parrafoPlatos">RTX 3060 TI LHR</p>
                                 <img class="imgGpus" src="../imagenes/RTX 3060 TI LHR.png" alt="RTX-3060-TI">
-                                <span class="iconoPeso material-symbols-outlined" >
-                                    attach_money
-                                    </span>
+                                <p class="parrafoPlatos">RTX 3060 TI LHR</p>
+                                <h4 class="precio">Precio: $ </h4>
+                                <button id="AgrgarCarrito">Agregar al carrito</button>
                             </div >
         
                             <div class="tarjetaGpus tarjetaTres" data-aos="zoom-in-left">
-                                <p class="parrafoPlatos">RTX 3070 PHOENIX GS</p>
                                 <img class="imgGpus" src="../imagenes/RTX 3070 PHOENIX GS 8GB.png" alt="RTX-3070-PHOENIX">
-                                <span class="iconoPeso material-symbols-outlined" >
-                                    attach_money
-                                    </span>
+                                <p class="parrafoPlatos">RTX 3070 PHOENIX GS</p>
+                                <h4 class="precio">Precio: $ </h4>
+                                <button id="AgrgarCarrito">Agregar al carrito</button>
                             </div>
         
                          
@@ -117,7 +114,15 @@
                      
                     </div>
                 
-                    
+                    <div id="modalContenedor" class="contenedorModal ">
+                        <div id="modal" class="modal">
+                            <h2>Carrito de compras</h2>
+                            <p>Producto</p>
+                            <h3>Total</h3>
+                            <button id="botonCerrar">Cerar</button>
+                        </div>
+    
+                    </div>
            
         </main>
         <footer>
@@ -127,6 +132,6 @@
         </footer>
    
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="../js/gpus.js"></script>
+        
 </body>
 </html>
