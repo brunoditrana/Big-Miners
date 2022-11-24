@@ -66,6 +66,7 @@ const contenedorProd = document.querySelector("#contenedorTarjetas")
 
 const producto1 = stockProductos[1];
 
+//-----------------------------------------
 
 stockProductos.forEach((producto) => {
 
@@ -78,8 +79,34 @@ div.innerHTML = `
                                <p class="parrafoPlatos">Placa de Video</p>
                          <p class="parrafoPlatos">${producto.placa}</p>
                            <h4 class="precio">Precio: $ ${producto.precio }</h4>
-                          <button id="AgrgarCarrito"> Agregar al carrito</button>`
+                          `
+
+
+const boton = document.createElement("button")
+boton.innerHTML = "Agregar al carrito"
+//boton.className =
+boton.addEventListener("click", () => {
+    agregarCarrito(producto.id)
+} )
+
+
+div.append(boton)
 
 contenedorProd.append(div)
 
+
+
+
 })
+
+// agregar al carrito
+
+const carrito = []
+
+const agregarCarrito = (id) =>{
+    const producto = stockProductos.find((item) => item.id === id)
+
+    carrito.push(producto)
+    console.log(producto)
+} 
+

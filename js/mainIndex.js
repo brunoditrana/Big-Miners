@@ -1,5 +1,5 @@
 
-
+/*/
 let mensajeInicio = alert("BIENVENIDO A LA PAGINA OFICIAL DE BIG MINERS");
 
 let mensajeNombre = prompt("Ingresa tu nombre para comenzar");
@@ -40,7 +40,7 @@ while((mensajeopciones == "01") || (mensajeopciones == "02") || (mensajeopciones
    break;
 }
 
-
+*/
 
 
  
