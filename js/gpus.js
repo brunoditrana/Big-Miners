@@ -61,3 +61,25 @@ if(gpus == "1660 Super" ){
 })();
 }
 
+
+const contenedorProd = document.querySelector("#contenedorTarjetas")
+
+const producto1 = stockProductos[1];
+
+
+stockProductos.forEach((producto) => {
+
+
+const div = document.createElement("div");
+div.className = "tarjetaGpus"
+
+div.innerHTML = `
+                          <img class="imgGpus" src="${producto.img}"/>
+                               <p class="parrafoPlatos">Placa de Video</p>
+                         <p class="parrafoPlatos">${producto.placa}</p>
+                           <h4 class="precio">Precio: $ ${producto.precio }</h4>
+                          <button id="AgrgarCarrito"> Agregar al carrito</button>`
+
+contenedorProd.append(div)
+
+})

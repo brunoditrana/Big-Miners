@@ -1,12 +1,14 @@
 .dividirGpus{
-    display: grid;
+  
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(3, auto);
     margin-bottom: 3rem;
     grid-template-areas: 
     "tituloGpus tituloGpus tituloGpus tituloGpus"
     "tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno" 
-    "tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos"
+   "contenedorTarjetas contenedorTarjetas contenedorTarjetas"
 
 }
 .claseFlex{                               
@@ -23,12 +25,13 @@
     font-size: 2rem;
     margin-top: 2rem;
     font-family: 'Fredericka the Great', cursive;
+    
 }
 
-.tarjetasFilaUno{ grid-area: tarjetasFilaUno;
+.tarjetasFilaUno{ 
     @extend .claseFlex;                            // Extend          
 } 
-.tarjetasFilaDos{grid-area: tarjetasFilaDos;
+.tarjetasFilaDos{
     @extend .claseFlex; 
 }
 .tarjetaGpus{
@@ -100,4 +103,17 @@
 .contenedorModalActivo{
     visibility: visible;
     opacity: 1;
+}
+.contenedorTarjetas{
+    grid-area: contenedorTarjetas;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    .tarjetaGpus{
+        margin: 2rem 4rem;
+    }
+    
 }

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../css/estilo.css">
+    <script defer src="../js/stock.js"></script>
+    <script defer src="../js/modal.js"></script>
+    <script defer src="../js/Rigs.js"></script>
     <title>Rigs de Mineria</title>
 </head>
 <body>
@@ -19,7 +22,7 @@
                     <img src="../imagenes/logo diseñado 1.png" alt="">
                 </div>
                 <div class="iconoCompra">
-                    <a href=""><img src="../imagenes/carrito-de-compras.png" alt=""></a>
+                    <button id="botonAbrir"><img src="../imagenes/carrito-de-compras.png" alt=""></button>
                  </div>
                 
          </div>
@@ -55,60 +58,23 @@
                 <h1> RIGS DE MINERIA</h1>
             </div>
             
+          
 
-            <div class="tarjetasFilaUno">
-                        
-                <div class="tarjetaGpus tarjetaUno" data-aos="zoom-in-right">
-                    <p class="parrafoPlatos">Rig de Mineria 1660 Super X6</p>
-                    <img  class="imgGpus" src="../imagenes/Rig de Mineria 1660 Super X6.png" alt="1660-Super-X6">
-                    <span class="iconoPeso material-symbols-outlined">
-                        attach_money
-                        </span>
-                </div>
+            
+          
+          <div id="contenedorRigs" class="contenedorRigs">
 
-                <div class="tarjetaGpus tarjetaDos" data-aos="zoom-in-right">
-                    <p class="parrafoPlatos">Rig de Mineria 2060 Super X6</p>
-                    <img class="imgGpus" src="../imagenes/Rig de Mineria 2060 Super X6.png" alt="2060-Super-X6">
-                    <span class="iconoPeso material-symbols-outlined" >
-                        attach_money
-                        </span>
-                </div >
-                
-                
+        </div>
 
-                <div class="tarjetaGpus tarjetaTres" data-aos="zoom-in-left">
-                    <p class="parrafoPlatos">Rig de Mineria 3070 TI X6 </p>
-                    <img class="imgGpus" src="../imagenes/Rig de Mineria 3070 TI X6.png" alt="3070-TI-X6 ">
-                    <span class="iconoPeso material-symbols-outlined" >
-                        attach_money
-                        </span>
-                </div>
-          </div>
-          <div class="tarjetasFilaDos">
-                        
-            <div class="tarjetaGpus tarjetaUno" data-aos="zoom-in-right">
-                <p class="parrafoPlatos">Otros Rigs</p>
-                <img  class="imgGpus" src="../imagenes/" alt="">
-                <span class="iconoPeso material-symbols-outlined" >
-                    attach_money
-                    </span>
+        <div id="modalContenedor" class="contenedorModal ">
+            <div id="modal" class="modal">
+                <h2>Carrito de compras</h2>
+                <p>Producto</p>
+                <h3>Total</h3>
+                <button id="botonCerrar">Cerar</button>
             </div>
 
-            <div class="tarjetaGpus tarjetaDos" data-aos="zoom-in-right">
-                <p class="parrafoPlatos">Otros Rigs</p>
-                <img class="imgGpus" src="../imagenes/" alt="">
-                <span class="iconoPeso material-symbols-outlined" >
-                    attach_money
-                    </span>
-            </div >
-
-            <div class="tarjetaGpus tarjetaTres" data-aos="zoom-in-left">
-                <p class="parrafoPlatos">Otros Rigs</p>
-                <img class="imgGpus" src="../imagenes/" alt="">
-                <span class="iconoPeso material-symbols-outlined" >
-                    attach_money
-                    </span>
-            </div>
+        </div>
 
         </main>
         <footer>

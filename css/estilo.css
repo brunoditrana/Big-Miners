@@ -5,11 +5,12 @@
   overflow-x: hidden; }
 
 .dividirGpus {
-  display: grid;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(3, auto);
   margin-bottom: 3rem;
-  grid-template-areas: "tituloGpus tituloGpus tituloGpus tituloGpus" "tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno"  "tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos tarjetasFilaDos"; }
+  grid-template-areas: "tituloGpus tituloGpus tituloGpus tituloGpus" "tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno tarjetasFilaUno"  "contenedorTarjetas contenedorTarjetas contenedorTarjetas"; }
 
 .claseFlex, .tarjetasFilaUno, .tarjetasFilaDos {
   display: flex;
@@ -24,12 +25,6 @@
   font-size: 2rem;
   margin-top: 2rem;
   font-family: 'Fredericka the Great', cursive; }
-
-.tarjetasFilaUno {
-  grid-area: tarjetasFilaUno; }
-
-.tarjetasFilaDos {
-  grid-area: tarjetasFilaDos; }
 
 .tarjetaGpus {
   display: flex;
@@ -84,6 +79,16 @@
 .contenedorModalActivo {
   visibility: visible;
   opacity: 1; }
+
+.contenedorTarjetas {
+  grid-area: contenedorTarjetas;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden; }
+  .contenedorTarjetas .tarjetaGpus {
+    margin: 2rem 4rem; }
 
 div.contenedorGrid header {
   overflow: hidden; }
@@ -220,3 +225,11 @@ div.contenedorGrid .container-menu {
 
 .tarjetasFilaDos {
   margin-bottom: 4rem; }
+
+.contenedorRigs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 3rem; }
