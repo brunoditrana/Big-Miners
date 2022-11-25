@@ -60,9 +60,11 @@ if(gpus == "1660 Super" ){
 
 })();
 }
-
-
+const modalContenedor = document.querySelector("#modalContenedor")
 const contenedorProd = document.querySelector("#contenedorTarjetas")
+const modal = document.querySelector("#modal")
+
+const contadorCarrito = document.querySelector("#contadorCarrito")
 
 const producto1 = stockProductos[1];
 
@@ -84,7 +86,7 @@ div.innerHTML = `
 
 const boton = document.createElement("button")
 boton.innerHTML = "Agregar al carrito"
-//boton.className =
+boton.className = "botonAgregar"
 boton.addEventListener("click", () => {
     agregarCarrito(producto.id)
 } )
@@ -108,5 +110,45 @@ const agregarCarrito = (id) =>{
 
     carrito.push(producto)
     console.log(producto)
+
+
+    activarCarrito()
+    contadorCarro()
 } 
 
+
+const activarCarrito = () =>{ 
+    //const modal = document.querySelector(".modal")
+    //modal.innerHTML= ""
+
+    carrito.forEach((producto) => {
+        const div = document.createElement("div")
+        div.className = "nuevoModal"
+        div.innerHTML= `
+        
+        <p class="productoCarrito">${producto.placa}</p>
+        <h2 class="precioCarrito">Precio: $ ${producto.precio }</h3>
+        
+        `
+   
+        modal.append(div)
+        //
+        const GpusLS = localStorage.getItem("Gpus")
+        console.log(GpusLS)
+   })
+   
+}
+
+const contadorCarro = () => {
+    contadorCarrito.innerHTML = carrito.length
+}
+
+//LOCAL STORAGE
+
+const GpuJSON = JSON.stringify(stockProductos)
+
+const RigsJSON = JSON.stringify(stockRigs)
+
+localStorage.setItem("Gpus", GpuJSON)
+
+localStorage.setItem("Rigs", RigsJSON)

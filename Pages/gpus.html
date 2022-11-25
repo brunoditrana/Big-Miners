@@ -22,7 +22,7 @@
                         <img src="../imagenes/logo diseñado 1.png" alt="">
                     </div>
                     <div class="iconoCompra">
-                       <button id="botonAbrir"><img src="../imagenes/carrito-de-compras.png" alt=""></button>
+                       <button id="botonAbrir"><img src="../imagenes/carrito-de-compras.png" alt=""><span id="contadorCarrito">0</span></button>
                     </div>
                     
              </div>
@@ -67,15 +67,20 @@
                         
                     </div>
                 
-                    <div id="modalContenedor" class="contenedorModal ">
-                        <div id="modal" class="modal">
-                            <h2>Carrito de compras</h2>
-                            <p>Producto</p>
-                            <h3>Total</h3>
-                            <button id="botonCerrar">Cerar</button>
+                    <div id="carritoContenedor">
+                        <div id="modalContenedor" class="contenedorModal ">
+                            
+                            <div id="modal" class="modal">
+
+                                <button id="botonCerrar" class="botonCerrar">X</button>
+                                <h2 class="tituloModal">Carrito de compras</h2>
+                            
+                            </div>
+        
                         </div>
-    
+
                     </div>
+                    
            
         </main>
         <footer>

@@ -43,7 +43,17 @@ while((mensajeopciones == "01") || (mensajeopciones == "02") || (mensajeopciones
 */
 
 
- 
+const nombreInicio = document.querySelector("#nombreInicio")
+
+let nombre = document.querySelector("#nombre") 
+
+botonInicio.addEventListener("click", ( ) =>{
+    nombreInicio.innerHTML = `BIENVENIDO "${nombre.value}" A NUETRA PAGINA OFICIAL`
+    
+});
+
+nombre
+ localStorage.setItem("nombre", nombre)
 
 
 

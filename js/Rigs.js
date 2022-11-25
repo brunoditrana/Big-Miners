@@ -1,4 +1,5 @@
 const contenedorRigs = document.querySelector("#contenedorRigs")
+const modal = document.querySelector("#modal")
 
 stockRigs.forEach((producto1) => {
 
@@ -14,7 +15,7 @@ stockRigs.forEach((producto1) => {
 
  const boton = document.createElement("button")
 boton.innerHTML = "Agregar al carrito"
- 
+ boton.className = "botonAgregar"
 boton.addEventListener("click", () => {
     agregarCarrito(producto1.id)
 } )
@@ -25,11 +26,37 @@ contenedorRigs.append(rigs)
 
 })
 
-const carrito = []
+const carrito1 = []
 
 const agregarCarrito = (id) =>{
-    const producto = stockProductos.find((item) => item.id === id)
+    const producto1 = stockRigs.find((item) => item.id === id)
 
-    carrito.push(producto)
-    console.log(producto)
+    carrito1.push(producto1)
+    console.log(producto1)
+
+    activarCarrito()
+    contadorCarro()
 } 
+
+const activarCarrito = () =>{ 
+    //const modal = document.querySelector(".modal")
+    //modal.innerHTML= ""
+
+    carrito1.forEach((producto1) => {
+        const rigs = document.createElement("div")
+        rigs.className = "modal"
+        rigs.innerHTML= `
+        
+        <p class="productoCarrito">${producto1.Rigs}</p>
+        <h3 class="precioCarrito">${producto1.precio }</h3>
+
+        `
+   
+        modal.append(rigs)
+   })
+   
+}
+
+const contadorCarro = () => {
+    contadorCarrito.innerHTML = carrito1.length
+}

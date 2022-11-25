@@ -93,11 +93,41 @@
 
         .modal{
             background-color: rgb(238, 238, 232);
-            width: 22rem;
-            height: 16rem;
+            width: 46rem;
+            height: auto;
             border-radius: 10px;
             padding: 15px;
-        }
+
+            .tituloModal{
+                font-size: 3rem;
+                color: rgb(36, 35, 35);
+                text-shadow: 2px 2px 2px gray;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .tituloProducto{
+                font-size: 2.5rem;
+                margin: 1rem;
+                text-align: center;
+            }
+            .tituloTotal{
+                font-size: 2.5rem;
+                margin: 1rem;
+                text-align: center;
+            }
+       
+            .botonCerrar{
+                
+                font-size: 3.5rem;
+                background-color: rgb(238, 238, 232);
+               align-items: flex-end;
+               border: none;
+               color: red;
+               cursor: pointer;
+               
+                
+            }
+          }   
 
 }
 .contenedorModalActivo{
@@ -116,4 +146,36 @@
         margin: 2rem 4rem;
     }
     
+}
+.botonAgregar{
+    margin: .5rem auto;
+    font-size: 1rem;
+    width: 70%;
+    padding: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(4, 36, 77);
+}
+.botonAgregar:hover{
+    background-color: rgb(9, 59, 124);
+}
+
+.productoCarrito{
+    margin:  auto;
+    width: 80%;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+}
+
+.precioCarrito{
+    width: 80%;
+    margin:  auto;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-top: none;
+    margin-bottom: 1rem;
+    text-align: center;
 }
