@@ -1,3 +1,4 @@
+
 .contenedorIndex{
     margin-top: 10rem;
     margin-bottom: 4rem;
@@ -77,4 +78,28 @@
     .botonNombre:hover{
         background-color: rgb(255, 221, 177);
     }
-}
+   
+     
+} 
+.ImagenesIndex{
+
+        
+         display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          
+           width: 90%;
+           margin: 1rem auto;
+        .cajaImagenes{
+            width: 90%;
+           
+    
+            .indexImg{
+                width: 95%;
+                height: 100%;
+               border-radius: 4px;
+               box-shadow: 2px 2px 2px 2px gray;
+            }
+           
+        }
+    }

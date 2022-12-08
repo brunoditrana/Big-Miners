@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden; }
+  box-sizing: border-box; }
 
 .dividirGpus {
   justify-content: space-evenly;
@@ -240,6 +239,12 @@ div.contenedorGrid .container-menu {
       cursor: pointer;
       font-size: 18px; }
 
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #0c0f50;
+  margin-top: 10rem; }
+
 .contenedorIndex {
   margin-top: 10rem;
   margin-bottom: 4rem; }
@@ -301,6 +306,20 @@ div.contenedorGrid .container-menu {
     padding: .5rem; }
   .contenedorNombre .botonNombre:hover {
     background-color: #ffddb1; }
+
+.ImagenesIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 1rem auto; }
+  .ImagenesIndex .cajaImagenes {
+    width: 90%; }
+    .ImagenesIndex .cajaImagenes .indexImg {
+      width: 95%;
+      height: 100%;
+      border-radius: 4px;
+      box-shadow: 2px 2px 2px 2px gray; }
 
 .bigMinersRigs {
   width: 55%;
