@@ -56,5 +56,24 @@ nombre
  localStorage.setItem("nombre", nombre)
 
 
+ const prueba2 = document.querySelector("#inicioImg")
 
+fetch("../js/imgApi.js")
+    .then((resp) => resp.json())
+    .then((data)  => {
+    console.log(data)
+
+    data.forEach((producto) => {
+        const div1 = document.createElement("div");
+        div1.className = "ImagenesIndex"
+        div1.innerHTML = `  
+       
+        <div class="cajaImagenes">
+            <img class="indexImg" src=${producto.img} alt="">
+        </div>
+        `
+        
+        prueba2.append(div1)
+    })
+})
 

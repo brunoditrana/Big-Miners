@@ -103,3 +103,23 @@
            
         }
     }
+   #inicioImg{
+   display: flex; flex-direction: row;
+   flex-wrap: wrap-reverse;
+    width: 100%;
+    margin: 1rem auto;
+   }
+   .ImagenesIndex{
+    
+    width: 30%;
+
+   }
+    .cajaImagenes{
+        
+      
+        width: 20%;
+    
+        .img{
+            width: 10%;
+        }
+    }

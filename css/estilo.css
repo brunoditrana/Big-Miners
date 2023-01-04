@@ -137,20 +137,42 @@
   font-size: 1.5rem;
   border: 1px solid black;
   border-top: none;
-  margin-bottom: 1rem;
   text-align: center; }
 
+.nuevoModal {
+  width: 40%;
+  margin: 0 auto;
+  justify-content: center; }
+
 .eliminarObjeto {
-  font-size: 2rem;
-  color: red; }
+  display: flex;
+  align-self: right;
+  width: 10%;
+  cursor: pointer;
+  border: none;
+  vertical-align: middle; }
+
+.logoBasura {
+  width: 3rem;
+  margin: auto;
+  display: inline;
+  object-fit: cover;
+  object-position: center right;
+  vertical-align: middle; }
 
 .contenedorModal {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 #modalFijo {
   width: 50%;
-  background-color: aliceblue; }
+  background-color: #f1f6fb; }
 
 div.contenedorGrid header {
   overflow: hidden; }
@@ -369,6 +391,21 @@ footer {
       border-radius: 4px;
       box-shadow: 2px 2px 2px 2px gray; }
 
+#inicioImg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  margin: 1rem auto; }
+
+.ImagenesIndex {
+  width: 30%; }
+
+.cajaImagenes {
+  width: 20%; }
+  .cajaImagenes .img {
+    width: 10%; }
+
 .bigMinersRigs {
   width: 55%;
   margin: 6rem auto; }
@@ -389,7 +426,3 @@ footer {
   flex-wrap: wrap;
   overflow: hidden;
   margin-top: 3rem; }
-
-.eliminarObjeto {
-  font-size: 2rem;
-  color: red; }

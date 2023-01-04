@@ -1,3 +1,4 @@
+
 const contenedorRigs = document.querySelector("#contenedorRigs")
 const modal = document.querySelector("#modal")
 
@@ -11,7 +12,7 @@ stockRigs.forEach((producto1) => {
                                <p class="parrafoPlatos">Rig de Mineria</p>
                          <p class="parrafoPlatos">${producto1.Rigs}</p>
                            <h4 class="precio">Precio: $ ${producto1.precio }</h4>
-                          `
+                           `
 
  const boton = document.createElement("button")
 boton.innerHTML = "Agregar al carrito"
@@ -52,7 +53,7 @@ const activarCarrito = () =>{
         
         `
         const botonCerrar = document.createElement("button")
-        botonCerrar.innerHTML = "X"
+        botonCerrar.innerHTML = ` <img src="../imagenes/borrar.png" alt=""></img>`
         botonCerrar.className = "eliminarObjeto"
 
         botonCerrar.addEventListener("click", () =>{

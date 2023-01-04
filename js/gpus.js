@@ -70,6 +70,7 @@ const producto1 = stockProductos[1];
 
 //-----------------------------------------
 
+
 stockProductos.forEach((producto) => {
 
 
@@ -131,7 +132,7 @@ const activarCarrito = () =>{
         
         `
         const botonCerrar1 = document.createElement("button")
-        botonCerrar1.innerHTML = "X"
+        botonCerrar1.innerHTML = ` <img class="logoBasura" src="../imagenes/borrar.png" alt=""></img>`
         botonCerrar1.className = "eliminarObjeto"
 
         botonCerrar1.addEventListener("click", () =>{
