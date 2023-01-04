@@ -1,6 +1,5 @@
+
 function inicio(){
-
-
 (async () => {
 
 const {value: gpus} = await Swal.fire({
@@ -19,12 +18,12 @@ const {value: gpus} = await Swal.fire({
 })
 
 const productoGpus = [
-    {id: 1, nombre:"Placa de Video 1660 Super" , precio: 110.000, stock: 3 },
-    {id: 2, nombre:"Placa de Video 2060 Super" , precio: 120.000, stock: 2  },
-    {id: 3, nombre:"Placa de Video RTX 3070 TI" , precio: 150.000, stock: 7 },
-    {id: 4, nombre:"RTX 3080 TI ZOTAC LHR" , precio: 180.000, stock: 1  },
-    {id: 5, nombre:"RTX 3060 TI LHR" , precio: 200.000, stock: 0  },
-    {id: 6, nombre:"RTX 3070 PHOENIX GS" , precio: 220.000, stock: 10  },
+    {id: 1, nombre:"Placa de Video 1660 Super" , precio: 200000, stock: 3 },
+    {id: 2, nombre:"Placa de Video 2060 Super" , precio: 220000, stock: 2  },
+    {id: 3, nombre:"Placa de Video RTX 3070 TI" , precio: 250000, stock: 7 },
+    {id: 4, nombre:"RTX 3080 TI ZOTAC LHR" , precio: 280000, stock: 1  },
+    {id: 5, nombre:"RTX 3060 TI LHR" , precio:  310000, stock: 0  },
+    {id: 6, nombre:"RTX 3070 PHOENIX GS" , precio: 320000, stock: 10  },
 ];
 
 function returnAlert(resultado){
@@ -39,19 +38,19 @@ if(gpus == "1660 Super" ){
     const resultado = productoGpus.filter((el) => el.nombre.includes("2060 Super"));
     returnAlert(resultado);
 
-}else if(gpus == "3070 TI"){
+}else if(gpus == "RTX 3070 TI"){
     const resultado = productoGpus.filter((el) => el.nombre.includes("3070 TI"));
     returnAlert(resultado);
 
-}else if(gpus == "3080 TI"){
+}else if(gpus == "3080tI ZOTAC LHR"){
     const resultado = productoGpus.filter((el) => el.nombre.includes("3080 TI"));
     returnAlert(resultado);
 
-}else if(gpus == "3060 TI"){
+}else if(gpus == "3060 TI LHR"){
     const resultado = productoGpus.filter((el) => el.nombre.includes("3060 TI"));
     returnAlert(resultado);
 
-}else if(gpus == "3070 PHOENIX"){
+}else if(gpus == "3070 PHOENIX GS"){
     const resultado = productoGpus.filter((el) => el.nombre.includes("3070 PHOENIX"));
     returnAlert(resultado);
 }
@@ -60,6 +59,9 @@ if(gpus == "1660 Super" ){
 
 })();
 }
+
+console.log(inicio())
+
 const modalContenedor = document.querySelector("#modalContenedor")
 const contenedorProd = document.querySelector("#contenedorTarjetas")
 const modal = document.querySelector("#modal")
