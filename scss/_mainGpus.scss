@@ -179,3 +179,17 @@
     margin-bottom: 1rem;
     text-align: center;
 }
+.eliminarObjeto{
+    font-size: 2rem;
+    color:red;
+}
+
+.contenedorModal{
+    display: flex;
+    flex-direction: column;
+}
+#modalFijo{
+width: 50%;
+background-color: aliceblue;
+
+}

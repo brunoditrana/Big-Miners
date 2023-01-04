@@ -40,7 +40,7 @@ const agregarCarrito = (id) =>{
 
 const activarCarrito = () =>{ 
     //const modal = document.querySelector(".modal")
-    //modal.innerHTML= ""
+    modal.innerHTML=` `
 
     carrito1.forEach((producto1) => {
         const rigs = document.createElement("div")
@@ -49,9 +49,18 @@ const activarCarrito = () =>{
         
         <p class="productoCarrito">${producto1.Rigs}</p>
         <h3 class="precioCarrito">${producto1.precio }</h3>
-
+        
         `
-   
+        const botonCerrar = document.createElement("button")
+        botonCerrar.innerHTML = "X"
+        botonCerrar.className = "eliminarObjeto"
+
+        botonCerrar.addEventListener("click", () =>{
+            rigs.remove()
+            
+            botonCerrar.remove()
+        })
+        modal.append(botonCerrar)
         modal.append(rigs)
    })
    

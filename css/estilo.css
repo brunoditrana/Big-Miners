@@ -140,6 +140,18 @@
   margin-bottom: 1rem;
   text-align: center; }
 
+.eliminarObjeto {
+  font-size: 2rem;
+  color: red; }
+
+.contenedorModal {
+  display: flex;
+  flex-direction: column; }
+
+#modalFijo {
+  width: 50%;
+  background-color: aliceblue; }
+
 div.contenedorGrid header {
   overflow: hidden; }
   div.contenedorGrid header.header {
@@ -170,6 +182,8 @@ div.contenedorGrid header {
       div.contenedorGrid header.header .container .iconoCompra a img {
         margin-top: .5rem;
         width: 3rem; }
+        div.contenedorGrid header.header .container .iconoCompra a img .imgCarrito {
+          opacity: 0; }
       div.contenedorGrid header.header .container .menu {
         float: right;
         line-height: 100px; }
@@ -183,6 +197,15 @@ div.contenedorGrid header {
           border-bottom: 2px solid;
           font-size: 15px;
           margin-right: 5px; }
+
+div.contenedorGrid #botonAbrir {
+  background-color: #0c0f50;
+  border: 0;
+  cursor: pointer; }
+
+div.contenedorGrid #contadorCarrito {
+  color: white;
+  font-size: 1rem; }
 
 div.contenedorGrid .capa {
   position: absolute;
@@ -238,6 +261,31 @@ div.contenedorGrid .container-menu {
       color: #fff;
       cursor: pointer;
       font-size: 18px; }
+
+#modalFijo {
+  display: flex;
+  width: 50%; }
+  #modalFijo .tituloModal {
+    margin: auto;
+    align-items: center;
+    color: #161515;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 2px 1px rgba(128, 128, 128, 0.49); }
+  #modalFijo .botonCerrar {
+    border: 1px solid rgba(0, 0, 0, 0.642);
+    padding: .2rem;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.979);
+    font-size: 2rem;
+    margin: .5rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: #210567;
+    font-family: 'Times New Roman', Times, serif; }
+    #modalFijo .botonCerrar:hover {
+      background-color: #d76411;
+      color: white; }
 
 footer {
   width: 100%;
@@ -341,3 +389,7 @@ footer {
   flex-wrap: wrap;
   overflow: hidden;
   margin-top: 3rem; }
+
+.eliminarObjeto {
+  font-size: 2rem;
+  color: red; }

@@ -111,33 +111,46 @@ const agregarCarrito = (id) =>{
     carrito.push(producto)
     console.log(producto)
 
-
+    
     activarCarrito()
     contadorCarro()
 } 
 
 
 const activarCarrito = () =>{ 
-    //const modal = document.querySelector(".modal")
-    //modal.innerHTML= ""
+    
+    modal.innerHTML=` `
 
     carrito.forEach((producto) => {
         const div = document.createElement("div")
         div.className = "nuevoModal"
         div.innerHTML= `
-        
+       
         <p class="productoCarrito">${producto.placa}</p>
         <h2 class="precioCarrito">Precio: $ ${producto.precio }</h3>
         
         `
-   
+        const botonCerrar1 = document.createElement("button")
+        botonCerrar1.innerHTML = "X"
+        botonCerrar1.className = "eliminarObjeto"
+
+        botonCerrar1.addEventListener("click", () =>{
+            div.remove()
+            
+            botonCerrar1.remove()
+        })
+        modal.append(botonCerrar1)
         modal.append(div)
-        //
+        
         const GpusLS = localStorage.getItem("Gpus")
-        console.log(GpusLS)
+        //console.log(GpusLS)
    })
    
 }
+
+
+
+ 
 
 const contadorCarro = () => {
     contadorCarrito.innerHTML = carrito.length
